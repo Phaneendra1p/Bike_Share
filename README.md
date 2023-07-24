@@ -11,4 +11,4 @@ In this step of the analysis, I prepared a list of SMART(Specific, Measurable,Ac
 3. How can Cyclistic use digital media to influence casual riders to become members?
 
 ## 2.Key tasks
-
+### Business Task:understand how casual riders and annual members use Cyclistic bikes differently
