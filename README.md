@@ -194,14 +194,14 @@ aggregate(all_trips_v3$ride_length ~ all_trips_v3$member_casual, FUN = max)
 
 aggregate(all_trips_v3$ride_length ~ all_trips_v3$member_casual, FUN = min)
 ```
-> [output1]()
+> [output1](https://github.com/Phaneendra1p/Bike_Share/blob/main/Comparing%20members%20and%20casuals%20by%20ride%20length.png)
 
 ## See the average ride time by each day for members vs casual users
 
 ```{r}
 aggregate(all_trips_v3$ride_length ~ all_trips_v3$member_casual + all_trips_v3$day_of_week, FUN = mean)
 ```
-> [output2]()
+> [output2](https://github.com/Phaneendra1p/Bike_Share/blob/main/Comparing%20members%20and%20casual%20users%20by%20weekday.png)
 
 ## Notice that the days of the week are out of order. Let's fix that.
 ```{r}
@@ -209,7 +209,7 @@ all_trips_v3$day_of_week <- ordered(all_trips_v3$day_of_week, levels=c("Sunday",
 # Now, let's run the average ride time by each day for members vs casual users
 aggregate(all_trips_v3$ride_length ~ all_trips_v3$member_casual + all_trips_v3$day_of_week, FUN = mean)
 ```
-> [output3]()
+> [output3](https://github.com/Phaneendra1p/Bike_Share/blob/main/Comparing%20members%20and%20casual%20users%20by%20weekday%20ordered.png)
 
 ## analyze ridership data by type and weekday
 ```{r}
@@ -220,7 +220,7 @@ all_trips_v3 %>%
   ,average_duration = mean(ride_length)) %>%        # calculates the average duration
   arrange(member_casual, weekday)
 ```
-> [output4]()
+> [output4](https://github.com/Phaneendra1p/Bike_Share/blob/main/analyze%20ridership%20data%20by%20type%20and%20weekday.png)
 
 ## Let's visualize the number of rides by rider type by weekday grouping
 ```{r}
@@ -233,7 +233,7 @@ all_trips_v3 %>%
   ggplot(aes(x = weekday, y = number_of_rides, fill = member_casual)) +
   geom_col(position = "dodge")
 ```
-> [output5]()
+> [output5](https://github.com/Phaneendra1p/Bike_Share/blob/main/number%20of%20rides%20vs%20weekday.png)
 
 ## Let's create a visualization for average duration by weekday grouping
 ```{r}
@@ -246,12 +246,13 @@ all_trips_v3 %>%
   ggplot(aes(x = weekday, y = average_duration, fill = member_casual)) +
   geom_col(position = "dodge")
 ```
-> [output6]()
+> [output6](https://github.com/Phaneendra1p/Bike_Share/blob/main/average%20duration%20vs%20weekday.png)
 
 
 ## I have created the rest of the visualizations using Tableau 
  Here is the tableau viz [link](https://public.tableau.com/app/profile/phaneendra.pittala/viz/bike_share_16897164389530)
-[Tableau visualizations pdf]()
+[Tableau visualizations pdf](https://github.com/Phaneendra1p/Bike_Share/blob/main/Tableau%20Visualizations.pdf)
+Most popular routes [here](https://github.com/Phaneendra1p/Bike_Share/blob/main/Most%20popular%20routes.png)
  # (v) Share Phase:
 
  In share phase I have presented this work using many platforms like 
