@@ -252,9 +252,9 @@ all_trips_v3 %>%
 ## I have created the rest of the visualizations using Tableau 
  Here is the tableau viz [link](https://public.tableau.com/app/profile/phaneendra.pittala/viz/bike_share_16897164389530)
  
-[Tableau visualizations pdf](https://github.com/Phaneendra1p/Bike_Share/blob/main/Tableau%20Visualizations.pdf)
+Tableau [visualizations pdf](https://github.com/Phaneendra1p/Bike_Share/blob/main/Tableau%20Visualizations.pdf)
 
-Most popular routes [here](https://github.com/Phaneendra1p/Bike_Share/blob/main/Most%20popular%20routes.png)
+Most popular [routes here](https://github.com/Phaneendra1p/Bike_Share/blob/main/Most%20popular%20routes.png)
  # (v) Share Phase:
 
  In share phase I have presented this work using many platforms like 
